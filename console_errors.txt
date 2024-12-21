@@ -1,0 +1,63 @@
+Dec 20 2024
+
+Fsp01
+
+	uav_ftp_servers
+		Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 5 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): core, ftpfiletransfer, supportapp, uavprocessing_testing, updatingtables.
+Run 'python manage.py migrate' to apply them.
+December 20, 2024 - 08:06:07
+Django version 1.11.13, using settings 'GRSDjangoWorkBook.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CTRL-BREAK.
+
+	grs_dashboard - react server
+		
+
+		TypeError: Object doesn't support property or method 'includes'
+Anonymous function
+T:/GIS_Main/20_Development/new_versions/gr_dashboard/src/ThemeSwitcher.js:25
+
+action: 
+	- validation applied on the robot name filtering (in case that no matches are found or no name is provided return false themeSwticher.js ln 26)
+	- created built for production version
+	- isntalled serve and serve the gboard
+
+sbx01
+
+	AutomaticInsertNewJobAffectedQuarters
+		08:53:36- AutomaticInsertNewJobAffectedQuarters - Job retrieval failed: (u'42000', u'[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]SQL Server Network Interfaces: Error Locating Server/Instance Specified [xFFFFFFFF]. ')
+08:53:36- AutomaticInsertNewJobAffectedQuarters - Traceback (most recent call last):
+  File "T:\GIS_Main\20_Development\SQL01_SearchWorkAutomation_Project\Search_Workflow\AutomaticInsertNewJobAffectedQuarters.py", line 113, in fetch_new_jobs
+    cursor.execute(sql)
+  File "C:\Python27\ArcGIS10.5\lib\site-packages\pypyodbc.py", line 1626, in execute
+    self.execdirect(query_string)
+  File "C:\Python27\ArcGIS10.5\lib\site-packages\pypyodbc.py", line 1652, in execdirect
+    check_success(self, ret)
+  File "C:\Python27\ArcGIS10.5\lib\site-packages\pypyodbc.py", line 1007, in check_success
+    ctrl_err(SQL_HANDLE_STMT, ODBC_obj.stmt_h, ret, ODBC_obj.ansi)
+  File "C:\Python27\ArcGIS10.5\lib\site-packages\pypyodbc.py", line 975, in ctrl_err
+    raise ProgrammingError(state,err_text)
+ProgrammingError: (u'42000', u'[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]SQL Server Network Interfaces: Error Locating Server/Instance Specified [xFFFFFFFF]. ')
+
+08:53:36- AutomaticInsertNewJobAffectedQuarters - Job quarters processing failed: (u'42000', u'[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]SQL Server Network Interfaces: Error Locating Server/Instance Specified [xFFFFFFFF]. ')
+08:53:36- AutomaticInsertNewJobAffectedQuarters - Traceback (most recent call last):
+  File "T:\GIS_Main\20_Development\SQL01_SearchWorkAutomation_Project\Search_Workflow\AutomaticInsertNewJobAffectedQuarters.py", line 172, in process_new_job_quarters
+    new_job_dict = fetch_new_jobs(logger)
+  File "T:\GIS_Main\20_Development\SQL01_SearchWorkAutomation_Project\Search_Workflow\AutomaticInsertNewJobAffectedQuarters.py", line 113, in fetch_new_jobs
+    cursor.execute(sql)
+  File "C:\Python27\ArcGIS10.5\lib\site-packages\pypyodbc.py", line 1626, in execute
+    self.execdirect(query_string)
+  File "C:\Python27\ArcGIS10.5\lib\site-packages\pypyodbc.py", line 1652, in execdirect
+    check_success(self, ret)
+  File "C:\Python27\ArcGIS10.5\lib\site-packages\pypyodbc.py", line 1007, in check_success
+    ctrl_err(SQL_HANDLE_STMT, ODBC_obj.stmt_h, ret, ODBC_obj.ansi)
+  File "C:\Python27\ArcGIS10.5\lib\site-packages\pypyodbc.py", line 975, in ctrl_err
+    raise ProgrammingError(state,err_text)
+ProgrammingError: (u'42000', u'[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]SQL Server Network Interfaces: Error Locating Server/Instance Specified [xFFFFFFFF]. ')
+	
+
+
